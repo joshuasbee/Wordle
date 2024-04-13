@@ -6,5 +6,8 @@ The game randomly picks a 5 letter word from [this github](https://github.com/ch
 Then it prompts you to take a guess, your first of 5. 
 * Green letter means you have the letter correct and it is in the correct spot
 * Yellow letter means you have a correct letter, in the wrong spot
-* Red letter means that letter is not in the answer at all.
+* Red letter means that letter is not in the answer at all
+* Be strategic with guesses, you only get 5! 
 
+### Made into an application using [PyInstaller](https://pyinstaller.org/en/stable/)
+[application](https://github.com/joshuasbee/Wordle-Clone/blob/43063ee5073a03a137c94c4611927cce2a6a6329/dist/wordle)
