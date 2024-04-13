@@ -1,3 +1,4 @@
+# https://github.com/charlesreid1/five-letter-words/blob/master/sgb-words.txt
 word_list = ["which",
 "there",
 "their",
