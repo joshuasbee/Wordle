@@ -23,7 +23,7 @@ def main():
     answer = get_word().upper()
     g_list = []
     for i in range(5): # For 5 guesses
-        guess = str(input(f"Guess {i + 1}: ")).upper() # Ask user for guess (Must be 5 letters)
+        guess = str(input(f"Guess {i + 1} / 5: ")).upper() # Ask user for guess (Must be 5 letters)
         if (guess == 'Q'):
             break # Ends the game
         guess = is_guess_valid(guess, i)
@@ -41,11 +41,11 @@ def is_guess_valid(guess: str, i: int) -> str:
             return str(guess) # good guess, 5 characters, and only letters. 
         else:
             red("Letters only!")
-            new_guess = input(f'Guess {i + 1}: ') # New guess needed
+            new_guess = input(f'Guess {i + 1} / 5: ') # New guess needed
             return is_guess_valid(new_guess, i) # Recursive call, check if its good again. 
     else:
         red("5 characters!")
-        new_guess = input(f'Guess {i + 1}: ') # Need a new guess, 
+        new_guess = input(f'Guess {i + 1} / 5: ') # Need a new guess, 
         return is_guess_valid(new_guess, i) # Recursive call, check if new guess is valid.
 
 def color_letters(guess: str, answer: str):
